@@ -12,7 +12,7 @@ class CoinRepository {
 
     data.forEach((_, coinList) {
       if (coinList is List && coinList.isNotEmpty) {
-        final coinMap = coinList[0]; // pega o primeiro item da lista
+        final coinMap = coinList[0];
         result.add(Coin.fromMap(coinMap));
       }
     });
